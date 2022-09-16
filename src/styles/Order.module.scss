@@ -1,0 +1,47 @@
+@import 'vars';
+
+.order{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 16px;
+
+}
+
+.order_item{
+    display: flex;
+    align-items: center;
+}
+
+.order-list_img{
+    width: 76px;
+    height: 76px;
+    border-radius: 15px;
+}
+
+.order-list_name{
+    width: 100px;
+    font-weight: lighter;
+    margin-left: 16px;
+}
+
+.order-list_price{
+    font-weight: bold;
+}
+
+.order-closeIcon{
+    width: 16px;
+    cursor: pointer;
+    padding: 4px;
+}
+
+
+@media (max-width: 280px) {
+    .card_item{
+        flex-direction: column;
+        align-items: center;
+        width: 200px;
+
+    }
+    
+}

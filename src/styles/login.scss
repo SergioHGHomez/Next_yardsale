@@ -1,0 +1,106 @@
+@import 'vars';
+
+.container-login{
+    width: 100%;
+    height: 100vh;
+    display: grid;
+    justify-items: center;
+    margin: 0px;
+    
+}
+.form-container{
+    width: 316px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.form-container_form{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+.form-container_img{
+    display: none;
+    padding: 86px;
+    width: 150px;
+}
+.form-container_heading{
+    color: var(--dark);
+    font-size: var(--lg);
+    margin: 0px;
+    
+}
+
+.form-container_p{
+    color: var(--very-light-pink);
+    font-size: var(--md);
+    margin:4px;
+    text-align: center;
+
+}
+
+
+.form-container_label{
+    
+    margin-top: 20px;
+    margin-bottom: 4px;
+    font-size: var(--md);
+    font-weight: bold;
+}
+
+.form-container_input{
+background: var(--Text-input-field);
+border: none;
+border-radius: 10px;
+width: 100%;
+margin: 0px;
+padding-top: 8px;
+padding-bottom: 8px;
+font-size: var(--md);
+}
+
+.primary-button{
+    color: var(--Text-input-field);
+    background-color: var(--hospital-green);
+    border: none;
+    border-radius: 10px;
+    width: 100%;
+    margin-top: 28px;
+    margin-bottom: 16px;
+    padding: 16px;
+    font-size: var(--md);
+    cursor: pointer;
+}
+
+
+.form-container_forgot-pass{
+    text-decoration: none;
+    color: var(--hospital-green);
+    font-size: var(--sm);
+}
+
+.secondary-button{
+    font-size: var(--md);
+    color: var(--hospital-green);
+    background-color: var(--white);
+    border: var(--hospital-green);
+    border-style:solid;
+    border-radius: 10px;
+    width: 100%;
+    padding: 16px;
+    margin-top: 40px;
+    cursor: pointer;
+}
+
+@media (max-width: 600px) {
+    .form-container_img{
+        display: block;
+    }
+
+    #signup-button{
+        margin-top: 86px;
+    }
+}

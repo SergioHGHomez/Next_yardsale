@@ -1,0 +1,115 @@
+@import "vars";
+
+.navbar{
+    position: static;
+    width: 100%;
+    padding: 8px 0px 8px 0px;
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 1px solid $--very-light-pink;
+}
+
+.nav-left{
+    padding-left: 40px;
+    display: flex;
+    align-items: center;
+}
+.nav-left_list{
+    display: flex;
+    justify-content: space-around;
+    list-style: none;
+}
+
+.nav-left_menulogo{
+    display: none;
+}
+
+.nav-left_logo{
+    width: 150px;
+}
+
+.nav-left_item{
+    margin-right: 12px;
+    padding: 8px;
+}
+ 
+.nav-left_item a {
+    font-weight: bold;
+    color: $--very-light-pink;
+    font-size: $--md;
+    text-decoration: none;
+}
+
+.nav-left_item:hover{
+    border: 2px solid $--hospital-green;
+    border-radius: 10px;
+}
+
+.nav-left_item:hover a {
+    color: $--hospital-green;
+}
+
+.nav-right{
+    padding-right: 40px;
+}
+
+.nav-right_list{
+    list-style: none;
+    display: flex;
+}
+
+.nav-right_menu{
+    font-weight: lighter;
+    margin-right: 32px;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+}
+
+.nav-right_cart a{
+    text-decoration: none;
+    color: $--Text-input-field;
+}
+
+.nav-right_icon{
+    position: relative;
+    width: 26px;
+    height: 26px;
+}
+
+.nav-right_icon img{
+    width: 100%;
+}
+
+.nav-right_icon div{
+    background-color: $--hospital-green;
+    border-radius: 50%;
+    width: 20px;
+    height: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    right: -10px;
+    top: -12px;
+    
+}
+
+@media (max-width:700px) {
+
+    .nav-left_menulogo{
+        display: block;
+        margin-right: 48px;
+    }
+    .nav-left_logo{
+        width: 100px;
+    }
+
+    .nav-left_list{
+        display: none;
+    }
+    
+    .nav-right_menu{
+        display: none;
+    }
+}

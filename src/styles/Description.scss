@@ -1,0 +1,85 @@
+@import 'vars';
+
+.description-card{
+    width: 400px;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    border-left: 1px solid var(--very-light-pink);
+}
+
+.description-card_image{
+    width: 100%;
+    height: 400px;
+    position: relative;
+}
+
+.description-card_produc-img{
+    width: 100%;
+    height: 100%;
+    border-radius: 0 0 15px 15px;
+    object-fit: cover;
+}
+
+.description-card_close{
+    width: 20px;
+    height: 20px;
+    position: absolute;
+    left: 16px;
+    top: 16px;
+    background: var(--white);
+    padding: 8px;
+    border: 1px solid var(--very-light-pink);
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.description-card_text{
+    padding: 40px;
+}
+
+.description-card_price{
+    font-weight: bold;
+    font-size: var(--md);
+    margin: 0 0 8px 0;
+}
+
+.description-card_name{
+    font-weight: lighter;
+    margin: 0;
+}
+
+.description-card_info{
+    font-weight: lighter;
+}
+
+.description-card_button{
+    width: 100%;
+    height: 56px;
+    border: none;
+    border-radius: 10px;
+    background: var(--hospital-green);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.description-card_button img{
+    fill: var(--white);
+    margin-right: 4px;
+}
+
+.description-card_button p{
+    color: var(--Text-input-field);
+    font-weight: bold;
+}
+
+@media (max-width:700px) {
+    .description-card{
+        width: 100%;
+    }
+
+    .description-card_close{
+        display: none;
+    }
+}
