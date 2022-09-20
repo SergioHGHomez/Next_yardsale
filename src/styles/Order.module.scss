@@ -13,10 +13,11 @@
     align-items: center;
 }
 
-.order-list_img{
+.order-list_image{
     width: 76px;
     height: 76px;
     border-radius: 15px;
+    object-fit: cover;
 }
 
 .order-list_name{

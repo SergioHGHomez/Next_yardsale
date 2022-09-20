@@ -1,5 +1,6 @@
 import React, {useState, useContext} from 'react';
 import Image from 'next/image';
+import Link from 'next/link';
 import menu from '@icons/icon_menu.svg';
 import logo from '@logos/logo_yard_sale.svg';
 import choppingCart from '@icons/icon_shopping_cart.svg';
@@ -23,10 +24,12 @@ const Header = () => {
     }
 
     return (
-        <nav className={styles.navbar}>
+        <header className={styles.navbar}>
         <div className={styles["nav-left"]}>
-            <Image className={styles["nav-left_menulogo"]} src={menu} alt="menu" />
-            <Image className={styles["nav-left_logo"]} src={logo} alt="logo" />
+            {/* <Image className={styles["nav-left_menulogo"]} src={menu} alt="menu" /> */}
+            <Link href={"/"}>
+                <Image className={styles["nav-left_logo"]} src={logo} alt="logo" />
+            </Link>
             <ul className={styles["nav-left_list"]}>
                 <li className={styles["nav-left_item"]}>
                     <a href="/">ALL</a>
@@ -64,7 +67,7 @@ const Header = () => {
         
         {toggle && <DesktopMenu />}
         {toggleOrderList && <OrderList />}
-    </nav>
+    </header>
             
 
     );

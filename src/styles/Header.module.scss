@@ -1,7 +1,10 @@
 @import "vars";
 
 .navbar{
-    position: static;
+    position: fixed;
+    z-index: 10;
+    top: 0;
+    background: $--white;
     width: 100%;
     padding: 8px 0px 8px 0px;
     display: flex;
@@ -26,6 +29,7 @@
 
 .nav-left_logo{
     width: 150px;
+    cursor: pointer;
 }
 
 .nav-left_item{

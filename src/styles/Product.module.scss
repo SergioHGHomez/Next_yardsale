@@ -20,13 +20,13 @@
   
   .Product_price{
     font-weight: bold;
-    font-size: var(--md);
+    font-size: --md;
     margin-top: 0px;
   }
   
   .Product_name{
-    font-size: var(--sm);
-    color: var(--very-light-pink);
+    font-size: --sm;
+    color: --very-light-pink;
     margin-top: 12px;
   }
   

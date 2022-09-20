@@ -2,6 +2,20 @@
 
 const nextConfig = {
   reactStrictMode: true,
+  images: {
+    domains: [  
+    'cdn.pocket-lint.com',
+    'cdn.shopify.com',
+    'cdn.pocket-lint.com',
+    'www.photolari.com',
+    'upload.wikimedia.org',
+    'mightygadget.co.uk',
+    'i.blogs.es',
+    'www.dwarf-factory.com',
+    'i.postimg.cc',
+
+  ],
+  }
   // env: {
   //   customKey: 'customValue',
   // },

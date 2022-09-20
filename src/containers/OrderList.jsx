@@ -1,4 +1,5 @@
 import React, {useContext} from 'react';
+import Link from 'next/link';
 import Order from '@components/Order';
 import AppContex from '../context/AppContext';
 import styles from '@styles/OrderList.module.scss';
@@ -27,10 +28,14 @@ const OrderList = () => {
             </div>
             <p className={styles["info_total"]}>$ {sumTotal()}</p>
           </div>
-          { state.cart.map((item) => (<Order product={item} key={`product-${item.id}`} />))}
+        <Link href={"/checkout"}>
+          <button className={styles["orderList-checkout_button"]}>check out</button>
+        </Link>
+          <ul className={styles["orderList_products"]}>
+            { state.cart.map((item) => (<Order product={item} key={`product-${item.id}`} />))}
+          </ul>
           
         </div>
-        <button className={styles["orderList-checkout_button"]}>check out</button>
       </section>
     );
 

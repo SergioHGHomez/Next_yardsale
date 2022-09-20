@@ -1,0 +1,29 @@
+@import 'vars';
+
+
+.cartInfo{
+    width: 500px;
+    margin-right: 16px;
+}
+
+.cartInfo_title{
+    font-size: larger;
+}
+
+.cartInfo_text{
+    color: $--very-light-pink;
+}
+
+.cartInfo_total{
+    font-size: xx-large;
+    font-weight: 700;
+}
+
+.cartInfo_list{
+    list-style: none;
+    margin-left: 36px;
+    background-color: $--very-light-pink;
+    padding: 16px;
+    border-radius: 15px;
+
+}
