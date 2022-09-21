@@ -12,17 +12,20 @@
 
 .cartInfo_text{
     color: $--very-light-pink;
+    margin: 0;
 }
 
 .cartInfo_total{
     font-size: xx-large;
     font-weight: 700;
+    margin: 0;
+    margin-bottom: 48px;
 }
 
 .cartInfo_list{
     list-style: none;
     margin-left: 36px;
-    background-color: $--very-light-pink;
+    background-color: $--ligth-grey;
     padding: 16px;
     border-radius: 15px;
 

@@ -11,7 +11,6 @@ const Order = ({ product }) => {
   const handleRemove = item => {
 
     removeToCart(item)
-    
 
   }
 
@@ -32,6 +31,8 @@ const Order = ({ product }) => {
       <Image 
           onClick={() => handleRemove(product)}
           className={styles["order-closeIcon"]}
+          width={20}
+          height={20}
           src={closeIcon}></Image>
     </div>
   );

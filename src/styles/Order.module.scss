@@ -5,6 +5,9 @@
     justify-content: space-between;
     align-items: center;
     margin-top: 16px;
+    background-color: $--Text-input-field;
+    border-radius: 15px;
+    padding: 8px;
 
 }
 
@@ -31,7 +34,7 @@
 }
 
 .order-closeIcon{
-    width: 16px;
+    width: 24px;
     cursor: pointer;
     padding: 4px;
 }

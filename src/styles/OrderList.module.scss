@@ -7,8 +7,7 @@
     height: 70vh;
     width: 400px;
     display: grid;
-    justify-items: center;
-    justify-content: center;
+    justify-content: start;
     padding: 32px;
     // padding-right: 50px;
     border-radius: 0 0 25px 25px;
@@ -23,7 +22,8 @@
 
 
 .orderList-list{
-    width: 300px;
+    margin-left: 16px;
+    width: 350px;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -60,7 +60,7 @@
 
 .orderList_products{
     width: 100%;
-    background: $--Text-input-field;
+    padding: 0;
     
 }
 
