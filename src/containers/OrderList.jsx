@@ -14,7 +14,7 @@ const OrderList = () => {
   const sumTotal = () => {
     const reducer = (acumulator, currentValue) => acumulator + currentValue.price;
     const sum = state.cart.reduce(reducer, 0);
-    return sum;
+    return sum.toFixed(2);
   }
 
     return(
