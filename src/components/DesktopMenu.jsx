@@ -1,18 +1,25 @@
-import React from "react";
-import styles from '@styles/DesktopMenu.module.scss'
+import React from 'react';
+import styles from '@styles/DesktopMenu.module.scss';
+import Link from 'next/link';
 
 const DesktopMenu = () => {
   return (
     <div className={styles.DesktopMenu}>
-      <ul className={styles["DesktopMenu_ul"]}>
+      <ul className={styles['DesktopMenu_ul']}>
         <li>
-          <a href="">My orders</a>
+          <Link href={"/"}>
+            <p>My orders</p>
+          </Link>
         </li>
         <li>
-          <a href="">My account</a>
+          <Link href={"/"}>
+            <p>My orders</p>
+          </Link>
         </li>
         <li>
-          <a href="/login">sign out</a>
+          <Link href={"/"}>
+            <p>sign out</p>
+          </Link>
         </li>
       </ul>
     </div>

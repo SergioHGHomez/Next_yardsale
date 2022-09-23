@@ -1,22 +1,19 @@
-import React from "react";
+import React from 'react';
 import styles from '@styles/ProductList.module.scss';
-import Product from "@components/Product";
-import useGetProducts from "@hooks/useGetProducts"
+import Product from '@components/Product';
+import useGetProducts from '@hooks/useGetProducts';
 
-
-const API = "/api/products";
+const API = '/api/products';
 
 const ProductList = () => {
-  const products = useGetProducts(API)
+  const products = useGetProducts(API);
 
   return (
-  <section className={styles.ProductList}>
-      
-        {products.map((product) => 
-          (<Product product={product} key={product.id} />)
-        )}
-      
-  </section>
+    <section className={styles.ProductList}>
+      {products.map((product) => (
+        <Product product={product} key={product.id} />
+      ))}
+    </section>
   );
 };
 

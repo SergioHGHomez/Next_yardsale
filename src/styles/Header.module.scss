@@ -37,21 +37,24 @@
     padding: 8px;
 }
  
-.nav-left_item a {
+.nav-left_filter-button{
     font-weight: bold;
-    color: $--very-light-pink;
+    border: 1px solid $--white;
+    color: $--dark;
     font-size: $--md;
-    text-decoration: none;
+    background: none;
 }
 
 .nav-left_item:hover{
     border: 2px solid $--hospital-green;
     border-radius: 10px;
+
+    .nav-left_filter-button{
+        color: $--hospital-green;
+    }
+
 }
 
-.nav-left_item:hover a {
-    color: $--hospital-green;
-}
 
 .nav-right{
     padding-right: 40px;
@@ -79,6 +82,7 @@
     position: relative;
     width: 26px;
     height: 26px;
+    cursor: pointer;
 }
 
 .nav-right_icon img{

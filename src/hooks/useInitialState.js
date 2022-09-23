@@ -1,49 +1,42 @@
-import { useState } from "react";
+import { useState } from 'react';
 
 const initialState = {
-    cart: [],
-    email: 'user@mail.com',
-}
+  cart: [],
+  email: 'user@mail.com',
+};
 
 const useInitialState = () => {
-    const [state, setState] = useState(initialState);
+  const [state, setState] = useState(initialState);
 
-    const addToCart = payload => {
+  const addToCart = (payload) => {
+    setState({
+      ...state,
+      cart: [...state.cart, payload],
+    });
+  };
 
-        setState({
-            ...state,
-            cart: [...state.cart, payload]
-        });
-    };
+  const removeToCart = (payload) => {
+    setState({
+      ...state,
+      cart: state.cart.filter((item) => {
+        return item.id !== payload.id;
+      }),
+    });
+  };
 
-    const removeToCart = payload => {
+  const saveEmail = (userEmail) => {
+    setState({
+      ...state,
+      email: userEmail,
+    });
+  };
 
-        setState({
-            ...state,
-            cart: state.cart.filter((item) => {
-                return item.id !== payload.id
-            })
-        })
-    }
-
-    const saveEmail = userEmail => {
-
-        setState({
-
-            ...state,
-            email: userEmail,
-
-        }
-        )
-    }
-
-    return{
-        state,
-        addToCart,
-        removeToCart,
-        saveEmail
-    }
-}
+  return {
+    state,
+    addToCart,
+    removeToCart,
+    saveEmail,
+  };
+};
 
 export default useInitialState;
-

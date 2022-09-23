@@ -1,7 +1,7 @@
 import '@styles/global.css';
 import AppContext from '@context/AppContext';
 import useInitialState from '@hooks/useInitialState';
-import Header from "components/Header";
+import Header from 'components/Header';
 
 function MyApp({ Component, pageProps }) {
   const initialState = useInitialState();
@@ -13,4 +13,4 @@ function MyApp({ Component, pageProps }) {
   );
 }
 
-export default MyApp
+export default MyApp;

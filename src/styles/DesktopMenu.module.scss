@@ -30,15 +30,16 @@
     border-top: 1px solid $--very-light-pink;
 }
 
-.DesktopMenu_ul li a{
+.DesktopMenu_ul li p{
     color: $--dark;
     text-decoration: none;
     display: inline-block;
     margin-bottom: 12px;
     font-size: $--md;
+    cursor: pointer;
 }
 
-.DesktopMenu_ul li:last-child a{
+.DesktopMenu_ul li:last-child p{
     color: $--hospital-green;
     font-size: $--sm;
     margin-top: 20px;

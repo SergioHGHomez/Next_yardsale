@@ -5,14 +5,13 @@ import ProductDetail from '@containers/ProductDetail';
 import Layaout from '@containers/Layout';
 
 const Home = () => {
-
-    return (
-        <Layaout>
-            <Header />
-            <ProductList />
-            <ProductDetail />         
-        </Layaout>
-    )
-}
+  return (
+    <Layaout>
+      <Header />
+      <ProductList />
+      <ProductDetail />
+    </Layaout>
+  );
+};
 
 export default Home;
