@@ -1,11 +1,11 @@
 import React from 'react';
 import styles from 'styles/CartItem.module.scss';
 
-const CartItem = () => {
+const CartItem = ({product}) => {
   return (
     <li className={styles.cartItem}>
-      <p className={styles['cartItem_name']}>name</p>
-      <p className={styles['cartItem_price']}>price</p>
+      <p className={styles['cartItem_name']}>{product.name}</p>
+      <p className={styles['cartItem_price']}>{product.price}</p>
     </li>
   );
 };

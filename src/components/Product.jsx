@@ -15,7 +15,9 @@ const Product = ({ product }) => {
     <div className={styles.product}>
       {/*  cards  */}
       <div className={styles['product_card']}>
-        <Image className={styles['Product_img']} src={product.image} alt={product.name} width="100%" height="100%" layout="responsive" />
+        <div className={styles['product_img-warap']}>
+          <Image className={styles['Product_img']} src={product.image} alt={product.name} width="100%" height="100%" layout="responsive" />
+        </div>
         <div className={styles['Product_info']}>
           <div className={styles['cards-cantainer_text']}>
             <p className={styles['Product_name']}>{product.name}</p>

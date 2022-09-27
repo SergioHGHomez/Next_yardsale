@@ -100,7 +100,7 @@ export default function handler(req, res) {
       category: 'keycaps',
     },
     {
-      id: 4,
+      id: 12,
       name: 'sony a7 IV',
       price: 2699.99,
       description:

@@ -1,8 +1,13 @@
 import React from 'react';
 import CartItem from '@components/CartItem';
 import styles from '@styles/CartInfo.module.scss';
+import { useContext } from 'react';
+import AppContext from '@context/AppContext';
+import Product from '@components/Product';
 
 const CartInfo = () => {
+  const {state} = useContext(AppContext);
+
   return (
     <article className={styles.cartInfo}>
       <h2 className={styles['cartInfo_title']}>Product description</h2>
@@ -10,10 +15,9 @@ const CartInfo = () => {
       <p className={styles['cartInfo_total']}>$0.00</p>
       <h3 className={styles['cartInfo_text']}>list of products</h3>
       <ul className={styles['cartInfo_list']}>
-        <CartItem />
-        <CartItem />
-        <CartItem />
-        <CartItem />
+        {state.cart.map((item) => (
+          <CartItem product={item} key={item.id}/>
+        ))}
       </ul>
     </article>
   );
