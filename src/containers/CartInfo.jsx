@@ -3,7 +3,6 @@ import CartItem from '@components/CartItem';
 import styles from '@styles/CartInfo.module.scss';
 import { useContext } from 'react';
 import AppContext from '@context/AppContext';
-import Product from '@components/Product';
 
 const CartInfo = () => {
   const {state} = useContext(AppContext);
