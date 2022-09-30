@@ -3,6 +3,7 @@
 
 .cartInfo{
     width: 500px;
+    margin-left: 100px;
     margin-right: 16px;
 }
 
@@ -11,7 +12,7 @@
 }
 
 .cartInfo_text{
-    color: $--very-light-pink;
+    color: $--grey;
     margin: 0;
 }
 
@@ -25,7 +26,6 @@
 .cartInfo_list{
     list-style: none;
     margin-left: 36px;
-    background-color: $--ligth-grey;
     padding: 16px;
     border-radius: 15px;
 

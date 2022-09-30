@@ -10,6 +10,7 @@ const OrderList = () => {
   let day = date.getDay();
   let month = date.getMonth();
   let year = date.getFullYear();
+  
   const sumTotal = () => {
     const reducer = (acumulator, currentValue) => acumulator + currentValue.price;
     const sum = state.cart.reduce(reducer, 0);

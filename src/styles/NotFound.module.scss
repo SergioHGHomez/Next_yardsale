@@ -25,7 +25,7 @@
 
 .NotFound_text{
     margin: 0;
-    color: var(--white);
+    color: $--white;
     font-size: 140px;
     font-weight: 400PX;
     
@@ -33,5 +33,5 @@
 
 .NotFound_text:nth-child(2){
     font-size: 200px;
-    color: var(--hospital-green);
+    color: $--hospital-green;
 }

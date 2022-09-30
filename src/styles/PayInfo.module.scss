@@ -1,0 +1,35 @@
+@import 'vars';
+
+.payInfo{
+    display: flex;
+    flex-direction: column;
+    width: 400px;
+    margin-right: 200px;
+    background: $--ligth-grey;
+    padding: 26px 16px 26px 16px;
+    border-radius: 16px;
+}
+
+.payInfo_Principal-title{
+    font-size: xx-large;
+    font-weight: 800;
+}
+
+.payInfo_input{
+    padding: 4px;
+    border: 1px solid $--ligth-grey;
+}
+
+.payInfo_select{
+    border: 1px solid $--white;
+    padding: 8px 16px 8px 16px;;
+}
+
+.payInfo_button{
+    padding: 8px 16px 8px 16px;
+    color: $--white;
+    border: $--hospital-green;
+    background: $--hospital-green;
+    font-size: medium;
+    font-weight: 500;
+}

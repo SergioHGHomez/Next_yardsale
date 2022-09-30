@@ -9,6 +9,7 @@
             "@styles/*": ["styles/*"],
             "@icons/*": ["assets/icons/*"],
             "@logos/*": ["assets/logos/*"],
+            "@favicon/*": ["assets/favicon/*"],
             "@context/*": ["context/*"],
             "@hooks/*": ["hooks/*"],
 

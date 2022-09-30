@@ -1,15 +1,24 @@
-import React, { useContext } from 'react';
+import React, { useContext, useState } from 'react';
 import Image from 'next/image';
 import AppContext from '@context/AppContext';
 import addIcon from '@icons/bt_add_to_cart.svg';
+import addedIcon from '@icons/bt_added_to_cart.svg';
 import styles from '@styles/Product.module.scss';
+
 
 const Product = ({ product }) => {
   const { addToCart } = useContext(AppContext);
-
+  
   const handleClick = (item) => {
-    addToCart(item);
+    
+    if (added == false){
+      addToCart(item);
+      setAdded(true);
+    }
+    
   };
+
+  const [added, setAdded] = useState(false);
 
   return (
     <div className={styles.product}>
@@ -24,7 +33,7 @@ const Product = ({ product }) => {
             <p className={styles['Product_price']}>${product.price}</p>
           </div>
           <figure onClick={() => handleClick(product)} className={styles['Product_add']}>
-            <Image src={addIcon} alt="add button" />
+            <Image src={added ? addedIcon : addIcon} alt="add button" />
           </figure>
         </div>
       </div>
