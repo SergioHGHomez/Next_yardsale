@@ -33,7 +33,7 @@ const Product = ({ product }) => {
             <p className={styles['Product_price']}>${product.price}</p>
           </div>
           <figure onClick={() => handleClick(product)} className={styles['Product_add']}>
-            <Image src={added ? addedIcon : addIcon} alt="add button" />
+            <Image className={styles['product_add-icon']} src={added ? addedIcon : addIcon} alt="add button" width="100%" height="100%" layout="responsive"  />
           </figure>
         </div>
       </div>
