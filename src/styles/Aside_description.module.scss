@@ -1,0 +1,63 @@
+@import 'vars';
+
+.aside-description{
+    background: rgba($color: #fff, $alpha: 0.5);
+    overflow: hidden;
+    position: absolute;
+    right: 0;
+    top: -16px;
+    z-index: 1;
+    width: 100%;
+    height: 100vh;
+    display: grid;
+    grid-template-columns: repeat(3, minmax(min(100%, 400px), 1fr));
+}
+
+.aside-description_card{
+    display: flex;
+    flex-direction: column;
+    grid-column: 3;
+    height: 100%;
+    background: $--Text-input-field;
+    position: relative;
+}
+
+.aside-description_card> figure{
+    margin: 0;
+    height: 50%;
+    overflow: hidden;
+}
+
+.aside-description_card> figure button{
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    position: absolute;
+    top: 8px;
+    left: 8px;
+    border: none;
+    border: 4px solid $--hospital-green;
+    cursor: pointer;
+}
+
+.aside-description_card> figure img{
+    width: 100%;
+    object-fit: contain;
+}
+
+.aside-description_info{
+    padding: 26px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+.aside-description_add-button{
+    background-color: $--hospital-green;
+    border: none;
+    height: 40px;
+    border-radius: 5px;
+    font-family: "Quicksand", sans-serif;
+    font-weight: 700;
+    cursor: pointer;
+}
